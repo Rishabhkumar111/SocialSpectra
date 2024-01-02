@@ -1,4 +1,3 @@
-
 import { Link, useNavigate } from "react-router-dom";
 import { Button } from "../ui/button";
 import { useSignOutAccountMutation } from "@/lib/react-query/queriesAndMutations";
@@ -18,12 +17,12 @@ const TopBar = () => {
 
   return (
     <section className="topbar">
-      <div className="flex-between py-4 px-5">
+      <div className="flex-between py-4 px-5 mt-1">
         <Link to="/" className="flex gap-3 items-center">
           <img
-            src="/assets/images/logo.svg"
+            src="/assets/images/SocialSpectra.svg"
             alt="Logo"
-            width={130}
+            width={180}
             height={325}
           />
         </Link>

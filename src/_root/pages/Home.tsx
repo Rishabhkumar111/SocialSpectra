@@ -1,14 +1,14 @@
 import PostCard from "@/components/shared/PostCard";
-import { useGetRecentPosts, useGetUsers } from "@/lib/react-query/queriesAndMutations";
+import {
+  useGetRecentPosts,
+  useGetUsers,
+} from "@/lib/react-query/queriesAndMutations";
 import { Models } from "appwrite";
 
-import { useToast } from "@/components/ui/use-toast";
 import Loader from "@/components/shared/Loader";
 import UserCard from "@/components/shared/UserCard";
 
 const Home = () => {
-  const { toast } = useToast();
-
   const {
     data: posts,
     isLoading: isPostLoading,

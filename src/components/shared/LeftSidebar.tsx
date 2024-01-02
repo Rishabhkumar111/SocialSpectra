@@ -1,4 +1,3 @@
-
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { Button } from "../ui/button";
 import { useSignOutAccountMutation } from "@/lib/react-query/queriesAndMutations";
@@ -23,10 +22,10 @@ function LeftSidebar() {
       <div className="flex flex-col gap-11">
         <Link to="/" className="flex gap-3 items-center">
           <img
-            src="/assets/images/logo.svg"
+            src="/assets/images/SocialSpectra.svg"
             alt="Logo"
-            width={170}
-            height={36}
+            width={200}
+            height={40}
           />
         </Link>
         <Link to={`/profile/${user.id}`} className="flex items-center gap-3">
