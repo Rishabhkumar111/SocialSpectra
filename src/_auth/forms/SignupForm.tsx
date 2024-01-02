@@ -27,10 +27,10 @@ const SignupForm = () => {
   const { mutateAsync: createUserAccount, isPending: isCreatingUser } =
     useCreateUserAccountMutation();
 
-  const { mutateAsync: signInAccount, isPending: isSigningIn } =
+  const { mutateAsync: signInAccount} =
     useSignInAccountMutation();
 
-  const {checkAuthUser, isLoading:isUserLoading} = useUserContext();
+  const {checkAuthUser} = useUserContext();
   const navigate = useNavigate();
 
   const form = useForm<z.infer<typeof signUpValidation>>({
