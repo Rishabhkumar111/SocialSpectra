@@ -16,9 +16,7 @@ import { Input } from "@/components/ui/input";
 import { signInValidation } from "@/lib/validation";
 import { z } from "zod";
 import Loader from "@/components/shared/Loader";
-import { createUserAccount } from "@/lib/appwrite/api";
 import {
-  useCreateUserAccountMutation,
   useSignInAccountMutation,
 } from "@/lib/react-query/queriesAndMutations";
 import { useUserContext } from "@/context/AuthContext";
@@ -107,7 +105,7 @@ const SigninForm = () => {
             )}
           />
           <Button type="submit" className="shad-button_primary">
-            {isUserLoading ? (
+            {isSigningIn ? (
               <div className="flex-center gap-2">
                 <Loader /> Loading...
               </div>
